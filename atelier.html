@@ -153,6 +153,23 @@ crossorigin="anonymous"
     </style>
 </head>
 <script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+  
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
   $(document).ready(function() {
     // Generate a random 5-digit alphanumeric code
     function generateCode() {
@@ -656,6 +673,14 @@ crossorigin="anonymous"
                         </center>
                               <br>
                         
+                              <br>
+                              <br>
+                              <br>
+                              <br>
+                              <br>
+                              <br>
+                              <button onclick="topFunction()" id="myBtn" class="btn btn-primary" title="Go to top"><h5>Back to Top</h5></button>
+                              <br>
                               <br>
                               <br>
             

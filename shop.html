@@ -158,8 +158,48 @@ crossorigin="anonymous"
 			text-align: center;
 			margin-top: 50px;
 		}
+    #scrollBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+#scrollBtn:hover {
+  background: rgb(150, 93, 202);
+        transition: .9s;
+        color: rgb(255, 255, 255);
+        border: transparent;
+}
+
     </style>
 </head>
+<script>
+  
+
+  // Get the button
+  let mybutton = document.getElementById("myBtn");
+  
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
 <body>
     <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
@@ -210,6 +250,22 @@ crossorigin="anonymous"
 <br>
 <br>
 <center>
+  <img src="https://i.ibb.co/q1xGPMp/THUND.gif" alt="Mockup" width="600"height="600">
+  </center>
+  <br>
+  <br>
+  <br><center>
+  <div class="card text-bg-dark mb-3" style="max-width: 35rem;">
+  <div class="card-header"><h9> COMMISSION AN ARTWORK</h9></div>
+  <div class="card-body">
+    <h5 class="card-title">DEPENDS ON RATES</h5><BR>
+    <p class="card-text">Commission an artwork or a brand design/toolkit from the artist. Get in touch by filling out the form below!</p><BR></center>
+      
+  </div>
+  </div>
+  </div>
+  <br>
+<center>
     <img src="https://i.ibb.co/DMYbFNv/IMG-2234.png" alt="IMG-2234" width="730"height="600"
 </center>
 <div class="card text-bg-dark mb-3" style="max-width: 35rem;">
@@ -253,22 +309,6 @@ crossorigin="anonymous"
 </div>
 <br>
 <br>
-<br>
-<br>
-<center>
-    <img src="https://i.pinimg.com/originals/c4/1a/75/c41a75767e2741bb005f96b4b6895898.gif" alt="Mockup" width="830"height="600">
-    </center>
-    <br>
-    <br>
-    <br>
-    <div class="card text-bg-dark mb-3" style="max-width: 35rem;">
-    <div class="card-header"><h9> COMMISSION AN ARTWORK</h9></div>
-    <div class="card-body">
-      <h5 class="card-title">DEPENDS ON RATES</h5><BR>
-      <p class="card-text">Commission an artwork or a brand design/toolkit from the artist. Get in touch by filling out the form below!</p><BR>
-    </div>
-    </div>
-    </div>
     <br>
     <br>
 <center>
@@ -327,8 +367,8 @@ crossorigin="anonymous"
               rows="3"
               name="loc"
             ></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary"><h5>Submit</h5></button>
+          </div><center>
+          <button type="submit" class="btn btn-primary"><h5>Submit</h5></button></center>
         </form>
       </div>
       <div class="col-md-6">
@@ -347,6 +387,11 @@ crossorigin="anonymous"
   <br>
   <br>
   <br>
+  <br>
+  <br>
+  <br>
+  <br><center>
+  <button onclick="topFunction()" id="myBtn" class="btn btn-primary" title="Go to top"><h5>Back to Top</h5></button></center><br>
   <br>
   <br>
 </body>
