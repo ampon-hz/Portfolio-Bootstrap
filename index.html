@@ -142,8 +142,23 @@ crossorigin="anonymous"
 			text-align: center;
 			margin-top: 50px;
 		}
+    .zoom {
+  
+  transition: transform .2s;
+  
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
     </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script>
   $(document).ready(function() {
     // Generate a random 5-digit alphanumeric code
@@ -209,12 +224,14 @@ crossorigin="anonymous"
       <br>
       <br>
       <center>
+        
         <img src="https://i.ibb.co/YhnB6Z6/down-Wizard-15-death.gif" height="230px" width="230px">
     </center>
             <h1> 530HZ </h1>
             <center>
         </center>
       </div>
+      
             <h4> WELCOME TO WORLD 1-1! <br>
                 PRESS START TO CONTINUE
             </h4>
@@ -222,9 +239,10 @@ crossorigin="anonymous"
             <br>
             <br>
             <center>
+              <div class="zoom">
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <h5>START</h5>
-                  </button>
+                  </button></div>
                   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                       <div class="modal-content">
@@ -314,9 +332,9 @@ crossorigin="anonymous"
         <br>
         <br>
         <center><h4>INTERESTED IN VIDEOS?</h4></center>
-        <p class="card-text"><center>
+        <p class="card-text"><center><div class="zoom">
           <a href="https://ztgello.github.io/PORTFOLIO-WEBSITE/" class="btn btn-primary"><h5>CHECK OUT GSUS</h5></a>
-           </button>
+           </button></div>
             </center></p></div></div>
   
   <br>
@@ -391,7 +409,7 @@ crossorigin="anonymous"
               <a href="https://ztgello.github.io/PORTFOLIO-WEBSITE/" class="text-reset">CHECK OUT GSUS</a>
             </p>
           </p>
-          <p> +63947XXXXXXX</p>
+          <p> +639 8526 6023</p>
           <br>
           <a href="momo.html" class="text-reset"><h6>CLICK FOR A SURPRISE</h6></a>
           <p>
@@ -406,7 +424,7 @@ crossorigin="anonymous"
   <!-- Copyright -->
   <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
     © 2021 Copyright:
-    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">530HZ</a>
   </div>
   <!-- Copyright -->
 </footer>
